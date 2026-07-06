@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbain Tour - Tampilan Login</title>
+    <link rel="stylesheet" href="tampilan-login.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <section class="hero-side">
+        <div class="hero-decoration">
+          <div class="dot-grid"></div>
+          <div class="circle-large"></div>
+          <div class="circle-small"></div>
+          <div class="hero-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="hero-label">Mulai</p>
+          <h1>
+            <span>Petualanganmu</span>
+            <br />
+            Hari Ini
+          </h1>
+          <p class="hero-text">
+            Bergabunglah dengan komunitas kami dan jelajahi keindahan Bandung.
+          </p>
+        </div>
+      </section>
+
+      <section class="form-side">
+        <div class="form-top">
+          <div class="brand-logo">
+            <img src="assets/Logo ARBAIN.png" alt="Arbain Tour" class="logo-image login-logo">
+            <div class="logo-text">
+              <strong>ARBAIN TOUR</strong>
+              <span>Jasa Tour dan Perjalanan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card" id="login-card"> 
+          <h2>Halo! Selamat datang</h2>
+
+          <form id="login-form">
+            <label class="field-label">
+              Email
+              <div class="input-group">
+                <span class="input-icon">📧</span>
+                <input type="email" placeholder="Masukkan alamat email Anda" required />
+              </div>
+            </label>
+
+            <label class="field-label">
+              Kata Sandi
+              <div class="input-group">
+                <span class="input-icon">🔒</span>
+                <input id="passwordInput" type="password" placeholder="Masukkan kata sandi" required />
+                <button type="button" class="eye-toggle" id="togglePassword" aria-label="Tampilkan kata sandi">👁️</button>
+              </div>
+            </label>
+
+            <div class="remember-row">
+              <label class="remember">
+                <input type="checkbox" />
+                <span>Ingat saya</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Masuk</button>
+
+            <div class="divider"><span>Atau</span></div>
+
+            <div class="social-wrap">
+              <p class="social-caption">Masuk cepat dengan akun Google</p>
+              <div class="social-buttons">
+                <button type="button" class="btn btn-social google">Google</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="form-card hidden" id="success-card">
+          <h2>Selamat Datang, Kinanthi!</h2>
+          <div class="success-icon">✔</div>
+          <p class="success-text">
+            Kamu berhasil masuk ke ArbainTour. Yuk mulai jelajahi Bandung, ada <span>3 promo</span> baru yang menunggumu hari ini!
+          </p>
+          <button id="startExplore" type="button" class="btn btn-primary">Mulai Jelajahi Bandung</button>
+          <button id="visitProfile" type="button" class="btn btn-secondary">Kunjungi Profil Saya</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="tampilan-login.js"></script>
+  </body>
+</html>

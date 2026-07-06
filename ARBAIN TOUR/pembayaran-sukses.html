@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pembayaran Berhasil - Arbain Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-inner">
+      <div class="brand">ARBAIN TOUR</div>
+    </div>
+  </header>
+
+  <main class="container success-page">
+    <div class="success-card card">
+      <div class="success-header">
+        <div class="success-icon">✓</div>
+        <h2>Pemesanan Berhasil!</h2>
+        <p class="muted">E-ticket telah diterbitkan dan siap digunakan.</p>
+      </div>
+
+      <div class="success-body">
+        <div class="qr-block">
+          <div class="qr-time muted">Senin, 18 Mei 2026 – 10:35 WIB</div>
+            <div style="position:relative;display:inline-block">
+              <div class="qr-wrap">
+                <img id="suc-qr" src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=ARB-2026-KP-0089" alt="QR Code">
+              </div>
+              <a id="openEticket" href="#" title="Lihat E-Ticket" style="position:absolute;right:-8px;top:-8px;color:var(--muted);background:#fff;border-radius:8px;padding:6px 8px;border:1px solid rgba(18,52,78,0.06);text-decoration:none">⤓</a>
+            </div>
+          <div class="booking-id">Booking ID: <strong class="booking-code">ARB-2026-KP-0089</strong></div>
+        </div>
+
+        <div class="detail-card">
+          <div class="td-row">
+            <img id="suc-thumb" src="https://images.unsplash.com/photo-1502920917128-1aa500764b0b?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3a0f1b6a2f0a3aa8d8a6a2b5b6c3d7f9" alt="thumb">
+            <div class="info-panel">
+              <div class="info-panel-inner">
+                <div class="tag">PAKET WISATA</div>
+                <div class="info-right">
+                  <strong class="td-title">Paket Bandung Budget Explorer</strong>
+                  <div class="muted td-meta" id="suc-date">2026-01-08</div>
+                  <div class="meta-row" style="margin-top:8px">
+                    <span class="muted" id="suc-pax">1 Orang</span>
+                    <span style="margin:0 8px;color:var(--muted)">•</span>
+                    <span class="muted" id="suc-place">Bandung</span>
+                  </div>
+                  <p class="td-desc" id="suc-desc" style="margin-top:10px">Nikmati paket wisata hemat ke Bandung, termasuk transport, penginapan, dan guide lokal.</p>
+                  <div class="rating-row" style="margin-top:12px;display:flex;align-items:center;gap:10px">
+                    <div class="stars" id="suc-stars">★★★★☆</div>
+                    <div class="muted" id="suc-reviews">(4.2 / 1.2k ulasan)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="confirmBack" class="btn pay">Kembali ke Beranda</button>
+          <a href="#" class="muted-link">⦿ Lihat Riwayat Pemesanan</a>
+        </div>
+      </div>
+    </div>
+  <script src="pembayaran-sukses.js"></script>
+  </main>
+
+</body>
+</html>

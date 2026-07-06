@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbain Tour - Platform Wisata Bandung & Jawa Barat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">
+                <img src="assets/Logo ARBAIN.png" alt="Arbain Tour" class="logo-icon logo-image">
+                <span class="logo-text">ARBAIN TOUR</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Beranda</a></li>
+                <li><a href="destinasi.html" class="nav-link">Destinasi</a></li>
+                <li><a href="penginapan.html" class="nav-link">Penginapan</a></li>
+                <li><a href="paket-wisata.html" class="nav-link">Paket Wisata</a></li>
+            </ul>
+            <a href="tampilan-login.html" class="btn-login">Masuk</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>⭐ DESTINASI #1 DI JAWA BARAT</span>
+            </div>
+            <h1 class="hero-title">Jelajahi Keindahan<br> Bersama <span class="highlight">Bandung</span></h1>
+            <p class="hero-subtitle">Dari puncak Tangkuban Perahu hingga gemerlap distro Dago — temukan pengalaman wisata Bandung yang tak terlupakan bersama kami.</p>
+            <button class="btn-primary">Mulai Jelajahi</button>
+            <div class="hero-meta">
+                <span class="hero-pill">Panduan Lokal</span>
+                <span class="hero-pill">Harga Transparan</span>
+                <span class="hero-pill">Booking Mudah</span>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-img-card">
+                <!-- Ganti dengan file yang akan Anda taruh: assets/Kawah-Putih-Tour-Bandung-2.webp -->
+                <img src="assets/Kawah-Putih-Tour-Bandung-2.webp" alt="Kawah Putih, Ciwidey" class="hero-img-card-img">
+                <div class="hero-img-caption">Surga Tersembunyi Bandung</div>
+            </div>
+            <div class="hero-img-location">🔴 Kawah Putih, Ciwidey</div>
+        </div>
+    </section>
+
+    <!-- FLASH SALE -->
+    <section class="flash-sale">
+        <div class="container">
+            <div class="flash-sale-content">
+                <div class="flash-sale-left">
+                    <span class="flash-badge">⚡ FLASH SALE - Berlaku s/d Minggu ini</span>
+                    <h2>Paket Liburan Akhir Tahun Bandung</h2>
+                    <p>Termasuk hotel bintang 4, transportasi, dan guide lokal berpengalaman</p>
+                </div>
+                    <div class="flash-sale-right">
+                    <div class="price">
+                        <span class="label">Mulai dari</span>
+                        <h2>Rp 499K</h2>
+                        <span class="duration">/orang/malam</span>
+                    </div>
+                    <button class="btn-secondary" data-buy data-buy-name="Paket Liburan Akhir Tahun Bandung" data-buy-price="499000" data-buy-img="assets/Kawah-Putih-Tour-Bandung-2.webp">Pesan Sekarang →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP DESTINASI -->
+    <section id="destinasi" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-badge">⭐ SEDANG POPULER</span>
+                    <h2>Destinasi <span class="highlight">Terpopuler</span> Minggu Ini</h2>
+                    <p>Pilihan wisatawan paling banyak dikunjungi — dijamin memukau dan cocok untuk semua kalangan.</p>
+                </div>
+            </div>
+
+            <div class="destinations-grid">
+                <article class="dest-card">
+                    <div class="dest-image" style="background-image: url('assets/grafika-cikole-lembang.jpg');">
+                        <div class="dest-image-top">
+                            <span class="dest-badge">Terpopuler</span>
+                            <button class="heart-icon" aria-label="Simpan favorit">♡</button>
+                        </div>
+                        <div class="dest-image-overlay">
+                            <h3>Grafika Cikole</h3>
+                            <p>Lembang, Bandung Barat</p>
+                        </div>
+                    </div>
+                    <div class="dest-info">
+                        <div class="rating-row">
+                            <span>★ 4.9</span>
+                            <span>(2.4K ulasan)</span>
+                        </div>
+                        <div class="dest-tags">
+                            <span>Alam</span>
+                            <span>Keluarga</span>
+                            <span>Foto</span>
+                        </div>
+                        <div class="dest-divider"></div>
+                        <div class="dest-footer">
+                            <div class="price-section">
+                                <span class="label">Mulai</span>
+                                <p class="price">Rp 85K</p>
+                                <span class="per">/orang</span>
+                            </div>
+                                <button class="btn-small" data-buy data-buy-name="Grafika Cikole" data-buy-price="85000" data-buy-img="assets/grafika-cikole-lembang.jpg">Booking</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="dest-card">
+                    <div class="dest-image" style="background-image: url('assets/Kawah-Putih-Tour-Bandung-2.webp');">
+                        <div class="dest-image-top">
+                            <span class="dest-badge">Terpopuler</span>
+                            <button class="heart-icon" aria-label="Simpan favorit">♡</button>
+                        </div>
+                        <div class="dest-image-overlay">
+                            <h3>Kawah Putih Ciwidey</h3>
+                            <p>Ciwidey, Bandung Selatan</p>
+                        </div>
+                    </div>
+                    <div class="dest-info">
+                        <div class="rating-row">
+                            <span>★ 4.9</span>
+                            <span>(3.2K ulasan)</span>
+                        </div>
+                        <div class="dest-tags">
+                            <span>Alam</span>
+                            <span>Foto</span>
+                            <span>Adventure</span>
+                        </div>
+                        <div class="dest-divider"></div>
+                        <div class="dest-footer">
+                            <div class="price-section">
+                                <span class="label">Mulai</span>
+                                <p class="price">Rp 65K</p>
+                                <span class="per">/orang</span>
+                            </div>
+                            <button class="btn-small" data-buy data-buy-name="Kawah Putih Ciwidey" data-buy-price="65000" data-buy-img="assets/Kawah-Putih-Tour-Bandung-2.webp">Booking</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="dest-card">
+                    <div class="dest-image" style="background-image: url('assets/tangkuban perahu.jpeg');">
+                        <div class="dest-image-top">
+                            <span class="dest-badge">Terpopuler</span>
+                            <button class="heart-icon" aria-label="Simpan favorit">♡</button>
+                        </div>
+                        <div class="dest-image-overlay">
+                            <h3>Tangkuban Perahu</h3>
+                            <p>Subang, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <div class="dest-info">
+                        <div class="rating-row">
+                            <span>★ 4.8</span>
+                            <span>(2.7K ulasan)</span>
+                        </div>
+                        <div class="dest-tags">
+                            <span>Gunung</span>
+                            <span>Legenda</span>
+                            <span>Foto</span>
+                        </div>
+                        <div class="dest-divider"></div>
+                        <div class="dest-footer">
+                            <div class="price-section">
+                                <span class="label">Mulai</span>
+                                <p class="price">Rp 30K</p>
+                                <span class="per">/orang</span>
+                            </div>
+                            <button class="btn-small" data-buy data-buy-name="Tangkuban Perahu" data-buy-price="30000" data-buy-img="assets/tangkuban perahu.jpeg">Booking</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="dest-card">
+                    <div class="dest-image" style="background-image: url('assets/wisata-perkebunan-teh-malabar-bandung-2.jpg');">
+                        <div class="dest-image-top">
+                            <span class="dest-badge">Terpopuler</span>
+                            <button class="heart-icon" aria-label="Simpan favorit">♡</button>
+                        </div>
+                        <div class="dest-image-overlay">
+                            <h3>Kebun Teh Malabar</h3>
+                            <p>Pangalengan, Jawa Barat</p>
+                        </div>
+                    </div>
+                    <div class="dest-info">
+                        <div class="rating-row">
+                            <span>★ 4.7</span>
+                            <span>(1.4K ulasan)</span>
+                        </div>
+                        <div class="dest-tags">
+                            <span>Agrowisata</span>
+                            <span>Keluarga</span>
+                            <span>Foto</span>
+                        </div>
+                        <div class="dest-divider"></div>
+                        <div class="dest-footer">
+                            <div class="price-section">
+                                <span class="label">Mulai</span>
+                                <p class="price">Rp 25K</p>
+                                <span class="per">/orang</span>
+                            </div>
+                            <button class="btn-small" data-buy data-buy-name="Kebun Teh Malabar" data-buy-price="25000" data-buy-img="assets/wisata-perkebunan-teh-malabar-bandung-2.jpg">Booking</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAKET SPESIAL -->
+    <section id="paket" class="special-packages">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-badge">⭐ PAKET SPESIAL</span>
+                    <h2>Paket Tour <span class="highlight">Terbaik</span> Kami</h2>
+                </div>
+                <a href="paket-wisata.html" class="link-more">Semua Paket →</a>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image" style="background-image: url('assets/Orchid Garden Cikole - Google Penelusuran.jpg');">
+                        <span class="duration">3 Hari 2 Malam</span>
+                        <div class="package-image-copy">
+                            <h3>Paket Alam Bandung</h3>
+                            <p>Tangkuban - Lembang - Kawah Putih</p>
+                        </div>
+                    </div>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <span class="icon">🏨</span>
+                            <span>Hotel Bintang 3</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🚐</span>
+                            <span>Transport AC</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🍽️</span>
+                            <span>Sarapan Incl.</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🎫</span>
+                            <span>Tiket Masuk</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">👤</span>
+                            <span>Guide Lokal</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📷</span>
+                            <span>Foto Souvenir</span>
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <div>
+                            <div class="original-price">Rp 1.200.000</div>
+                            <div class="package-price">Rp 899K</div>
+                            <div class="saving">💚 Hemat Rp 301K</div>
+                        </div>
+                        <button class="btn-secondary" data-buy data-buy-name="Paket Alam Bandung" data-buy-price="899000" data-buy-img="assets/Orchid Garden Cikole - Google Penelusuran.jpg">Pesan →</button>
+                    </div>
+                </div>
+
+                <div class="package-card featured">
+                    <div class="package-image" style="background-image: url('assets/alun alun bandung.jpg');">
+                        <span class="duration">5 Hari 4 Malam</span>
+                        <span class="package-featured-badge">⭐ Terfavorit</span>
+                        <div class="package-image-copy">
+                            <h3>Paket Bandung Lengkap</h3>
+                            <p>Alam - Kuliner - Belanja</p>
+                        </div>
+                    </div>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <span class="icon">🏨</span>
+                            <span>Hotel Bintang 4</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🚐</span>
+                            <span>Transport VIP</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🍽️</span>
+                            <span>Makan 3x/Hari</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">👤</span>
+                            <span>Guide Senior</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🛍️</span>
+                            <span>All Tiket Incl.</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🛒</span>
+                            <span>Shopping Tour</span>
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <div>
+                            <div class="original-price">Rp 2.800.000</div>
+                            <div class="package-price">Rp 1.799K</div>
+                            <div class="saving">💚 Hemat Rp 1.001K</div>
+                        </div>
+                        <button class="btn-secondary" data-buy data-buy-name="Paket Bandung Lengkap" data-buy-price="1799000" data-buy-img="assets/alun alun bandung.jpg">Pesan →</button>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image" style="background-image: url('assets/factory outlet.jpg');">
+                        <span class="duration">1 Hari Penuh</span>
+                        <div class="package-image-copy">
+                            <h3>Paket Day Trip</h3>
+                            <p>Lembang - Factory Outlet - Dago</p>
+                        </div>
+                    </div>
+                    <div class="package-details">
+                        <div class="detail-item">
+                            <span class="icon">🚗</span>
+                            <span>Antar Jemput</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🎫</span>
+                            <span>Tiket Wisata</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🍽️</span>
+                            <span>Makan Siang</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">👤</span>
+                            <span>Guide Lokal</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">📷</span>
+                            <span>Foto Gratis</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">🛡️</span>
+                            <span>Asuransi</span>
+                        </div>
+                    </div>
+                    <div class="package-footer">
+                        <div>
+                            <div class="original-price">Rp 450.000</div>
+                            <div class="package-price">Rp 299K</div>
+                            <div class="saving">💚 Hemat Rp 151K</div>
+                        </div>
+                        <button class="btn-secondary" data-buy data-buy-name="Paket Day Trip" data-buy-price="299000" data-buy-img="assets/factory outlet.jpg">Pesan →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PENGINAPAN -->
+    <section id="penginapan" class="accommodations">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-badge">⭐ PENGINAPAN</span>
+                    <h2>Hotel & Villa <span class="highlight">Terbaik</span></h2>
+                </div>
+                <a href="penginapan.html" class="link-more">Semua Hotel →</a>
+            </div>
+            <div class="accommodations-grid">
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background-image: url('assets/Fastrans Travel _ Bandung Tour - Paket Tour Wisata Bandung.jpg');">
+                        <div class="accommodation-image-overlay">
+                            <span class="accom-badge">Super Hemat</span>
+                            <button class="accom-heart" aria-label="Simpan favorit">♡</button>
+                        </div>
+                    </div>
+                    <div class="accommodation-info">
+                        <h3>Alam Lembang 1 Hari</h3>
+                        <p class="time">06.00 - 19.00 WIB</p>
+                        <div class="rating">★4.8 (1.2K ulasan)</div>
+                        <div class="accommodation-amenities card-amenities">
+                            <span>Transport AC</span>
+                            <span>3 Tiket Masuk</span>
+                            <span>Makan Siang</span>
+                        </div>
+                        <div class="accommodation-footer">
+                            <div>
+                                <p class="original-price">Rp 350.000</p>
+                                <p class="accommodation-price">Rp 199K</p>
+                                <span class="per-night">/orang</span>
+                                <p class="saving">💚 Hemat 43%</p>
+                            </div>
+                            <div class="accommodation-actions">
+                                <button class="btn-secondary" data-buy data-buy-name="Alam Lembang 1 Hari" data-buy-price="199000" data-buy-img="assets/Fastrans Travel _ Bandung Tour - Paket Tour Wisata Bandung.jpg">Pesan →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background-image: url('assets/Kawah-Putih-Tour-Bandung-2.webp');">
+                        <div class="accommodation-image-overlay">
+                            <span class="accom-badge blue">Terlaris</span>
+                            <button class="accom-heart" aria-label="Simpan favorit">♡</button>
+                        </div>
+                    </div>
+                    <div class="accommodation-info">
+                        <h3>Tangkuban + Sariater</h3>
+                        <p class="time">07.00 - 16.00 WIB</p>
+                        <div class="rating">★4.7 (980 ulasan)</div>
+                        <div class="accommodation-amenities card-amenities">
+                            <span>Transport AC</span>
+                            <span>2 Tiket Masuk</span>
+                            <span>Guide Lokal</span>
+                        </div>
+                        <div class="accommodation-footer">
+                            <div>
+                                <p class="original-price">Rp 320.000</p>
+                                <p class="accommodation-price">Rp 215K</p>
+                                <span class="per-night">/orang</span>
+                                <p class="saving">💚 Hemat 33%</p>
+                            </div>
+                            <div class="accommodation-actions">
+                                <button class="btn-secondary" data-buy data-buy-name="Tangkuban + Sariater" data-buy-price="215000" data-buy-img="assets/Kawah-Putih-Tour-Bandung-2.webp">Pesan →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background-image: url('assets/Lembang, Bandung.jpg');">
+                        <div class="accommodation-image-overlay">
+                            <span class="accom-badge orange">Nilai Terbaik</span>
+                            <button class="accom-heart" aria-label="Simpan favorit">♡</button>
+                        </div>
+                    </div>
+                    <div class="accommodation-info">
+                        <h3>3 Destinasi Ciwidey</h3>
+                        <p class="time">06.30 - 18.30 WIB</p>
+                        <div class="rating">★4.8 (756 ulasan)</div>
+                        <div class="accommodation-amenities card-amenities">
+                            <span>Transport</span>
+                            <span>3 Tiket Masuk</span>
+                            <span>Asuransi</span>
+                        </div>
+                        <div class="accommodation-footer">
+                            <div>
+                                <p class="original-price">Rp 450.000</p>
+                                <p class="accommodation-price">Rp 289K</p>
+                                <span class="per-night">/orang</span>
+                                <p class="saving">💚 Hemat 36%</p>
+                            </div>
+                            <div class="accommodation-actions">
+                                <button class="btn-secondary" data-buy data-buy-name="3 Destinasi Ciwidey" data-buy-price="289000" data-buy-img="assets/Lembang, Bandung.jpg">Pesan →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">⭐ ULASAN WISATAWAN</span>
+                <h2>Kata Mereka Tentang <span class="highlight">Kami</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Pengalaman wisata terbaik yang pernah saya rasakan! Panduan lokal sangat informatif, dan semua destinasi sangat memukau. Kawah Putih benar-benar luar biasa!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div>
+                            <strong>Sari Ramadhani</strong>
+                            <small>Jakarta - Paket 3 Hari</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Liburan keluarga kami jadi sangat berkesan. Hotelnya nyaman, makannya enak, dan anak-anak sangat senang di Lembang. Pasti akan kembali lagi!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AT</div>
+                        <div>
+                            <strong>Arya Tulang Punggung</strong>
+                            <small>Surabaya - Paket Keluarga</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Harga sangat terjangkau tapi kualitasnya premium. Saya terkejut seberapa lengkap paketnya. Dari transportasi, makan, hingga guide – semua terpenuhi!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">BR</div>
+                        <div>
+                            <strong>Bais Racing</strong>
+                            <small>Yogyakarta - Day Trip</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>ARBAIN TOUR</h3>
+                    <p>Platform wisata terpercaya untuk menjelajahi keindahan Bandung dan Jawa Barat. Kami menghadirkan pengalaman wisata Bandung yang tak terlupakan dengan harga terbaik.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>JELAJAHI</h4>
+                    <ul>
+                        <li><a href="#">Destinasi Wisata</a></li>
+                        <li><a href="#">Penginapan & Hotel</a></li>
+                        <li><a href="#">Paket Tour</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>BANTUAN</h4>
+                    <ul>
+                        <li><a href="#">Cara Booking</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Refund</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>KONTAK</h4>
+                    <p>📞 (022) 123-4567</p>
+                    <p>✉️ arbaintour.id</p>
+                    <p>📍 Jl. Asia Afrika No. 8<br>Bandung 40111</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Arbain Tour. Semua hak dilindungi. | Dibuat dengan ❤️ untuk Kota Bandung</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

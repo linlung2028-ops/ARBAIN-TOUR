@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pilih Metode Pembayaran - ARBAIN TOUR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-inner">
+      <div class="brand">ARBAIN TOUR</div>
+      <nav class="steps">
+        <div class="step done"><span>1</span><small>Pilih Produk</small></div>
+        <div class="step done"><span>2</span><small>Detail Pesanan</small></div>
+        <div class="step active"><span>3</span><small>Pilih Metode</small></div>
+        <div class="step"><span>4</span><small>Menunggu</small></div>
+        <div class="step"><span>5</span><small>Selesai</small></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <div class="grid">
+      <section class="left">
+        <div class="card methods-card">
+          <h3>Pilih Metode Pembayaran</h3>
+          <div class="methods-group">
+            <h5>TRANSFER BANK</h5>
+            <div class="pay-grid">
+              <button class="pay-method" data-method="BCA" type="button">
+                <div class="logo"><img src="assets/Logo BCA.png" alt="BCA logo"></div>
+                <div class="name">Bank BCA<small>Virtual Account</small></div>
+              </button>
+              <button class="pay-method" data-method="Mandiri" type="button">
+                <div class="logo"><img src="assets/Logo mandiri.png" alt="Mandiri logo"></div>
+                <div class="name">Bank Mandiri<small>Virtual Account</small></div>
+              </button>
+              <button class="pay-method" data-method="BNI" type="button">
+                <div class="logo"><img src="assets/BNI-logo.png" alt="BNI logo"></div>
+                <div class="name">Bank BNI<small>Virtual Account</small></div>
+              </button>
+              <button class="pay-method" data-method="BRI" type="button">
+                <div class="logo"><img src="assets/Logo BRI.png" alt="BRI logo"></div>
+                <div class="name">Bank BRI<small>Virtual Account</small></div>
+              </button>
+            </div>
+          </div>
+
+          <div class="methods-group">
+            <h5>DOMPET DIGITAL</h5>
+            <div class="pay-grid">
+              <button class="pay-method" data-method="GoPay" type="button">
+                <div class="logo"><img src="assets/logo-gopay.webp" alt="GoPay logo"></div>
+                <div class="name">GoPay<small>Via aplikasi Gojek</small></div>
+              </button>
+              <button class="pay-method" data-method="OVO" type="button">
+                <div class="logo"><img src="assets/logo-ovo.webp" alt="OVO logo"></div>
+                <div class="name">OVO<small>Via aplikasi OVO</small></div>
+              </button>
+              <button class="pay-method" data-method="DANA" type="button">
+                <div class="logo"><img src="assets/logo-dana.webp" alt="DANA logo"></div>
+                <div class="name">DANA<small>Via aplikasi DANA</small></div>
+              </button>
+              <button class="pay-method" data-method="QRIS" type="button">
+                <div class="logo"><img src="assets/logo QRIS.png" alt="QRIS logo"></div>
+                <div class="name">QRIS<small>Semua e-wallet & bank</small></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="right">
+        <div class="card summary-card">
+          <h4>Ringkasan Pesanan</h4>
+          <div class="summary-item">
+            <img id="summaryImg" src="" alt="thumb">
+            <div class="summary-info">
+              <strong id="summaryTitle">Paket Bandung Budget Explorer</strong>
+              <small id="summaryDate" class="summary-date">1 Orang • -</small>
+            </div>
+          </div>
+
+          <div class="price-lines">
+            <div class="line"><span>Harga normal</span><span class="muted old-price" id="oldPrice">Rp 350.000</span></div>
+            <div class="line"><span>Diskon member (15%)</span><span class="discount" id="discount">-Rp 150.501</span></div>
+            <div class="line"><span>Biaya admin</span><span class="muted">Gratis</span></div>
+          </div>
+
+          <div class="trx-info">
+            <div>Waktu Transaksi</div>
+            <div id="trxTime" class="muted">-</div>
+          </div>
+
+          <div class="total">
+            <small>Total Bayar</small>
+            <div id="totalAmount" class="total-price">Rp 199.499</div>
+          </div>
+
+          <button id="confirmMethod" type="button" class="btn pay">Konfirmasi Pembayaran</button>
+
+          <a id="backEdit" href="#" class="muted-link">← Kembali & ubah detail</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="pembayaran-metode.js"></script>
+</body>
+</html>

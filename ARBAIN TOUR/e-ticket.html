@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>E-Ticket - Arbain Tour</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-inner">
+      <div class="brand">ARBAIN TOUR</div>
+    </div>
+  </header>
+
+  <main class="container eticket-page">
+    <div class="eticket-card card">
+      <div class="et-top" style="text-align:center;">
+        <h2>E-Ticket Anda</h2>
+        <p class="muted">Tunjukkan QR ini saat check-in atau saat diminta petugas.</p>
+      </div>
+
+      <div class="et-body">
+        <div class="et-qr">
+          <img id="et-qr-img" src="" alt="QR Code">
+          <div class="booking-id">Booking ID: <strong id="et-booking">-</strong></div>
+        </div>
+
+        <div class="et-info">
+          <div class="et-image"><img id="et-image" src="" alt="destinasi"></div>
+          <div class="et-details info-panel">
+            <div class="tag">PAKET WISATA</div>
+            <h3 id="et-title">Paket Bandung Budget Explorer</h3>
+            <div class="muted" id="et-date">1-3 Februari 2025 • 1 Orang</div>
+            <p class="muted" id="et-desc" style="margin-top:10px;line-height:1.6">Nikmati paket wisata hemat ke Bandung, termasuk transport, penginapan, dan guide lokal.</p>
+            <div class="et-actions" style="margin-top:18px">
+              <a id="downloadBtn" class="btn small" href="#">Download QR</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:20px">
+        <a href="index.html" class="btn small" id="backHome">← Kembali ke Beranda</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="e-ticket.js"></script>
+</body>
+</html>

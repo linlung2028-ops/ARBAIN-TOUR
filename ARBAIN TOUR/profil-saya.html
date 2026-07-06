@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arbain Tour - Profil Saya</title>
+    <link rel="stylesheet" href="profil-saya.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-logo">✈</div>
+          <span>ARBAIN TOUR</span>
+        </div>
+
+        <div class="user-card">
+          <div class="user-avatar">KS</div>
+          <div class="user-info">
+            <strong>Kinanthi Sekar</strong>
+            <span>kinanthisekar@gmail.com</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="#profile" class="nav-item active" data-section="profile">
+            <span class="nav-icon">👤</span>
+            Profil Saya
+          </a>
+          <a href="#pemesanan" class="nav-item" data-section="pemesanan">
+            <span class="nav-icon">🧾</span>
+            Pemesanan Saya
+          </a>
+          <a href="#wishlist" class="nav-item" data-section="wishlist">
+            <span class="nav-icon">❤️</span>
+            Wishlist
+          </a>
+          <a href="#ulasan" class="nav-item" data-section="ulasan">
+            <span class="nav-icon">💬</span>
+            Ulasan Saya
+          </a>
+          <a href="#pengaturan" class="nav-item" data-section="pengaturan">
+            <span class="nav-icon">⚙️</span>
+            Pengaturan Akun
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button id="backHome" class="btn-secondary">Kembali ke Beranda</button>
+          <button id="logoutBtn" class="btn-logout">Keluar Akun</button>
+        </div>
+      </aside>
+
+      <main class="content">
+        <header class="page-header">
+          <div>
+            <h1 id="pageTitle">Profil Saya</h1>
+            <p id="pageSubtitle">Kelola informasi pribadi dan data akun Anda.</p>
+          </div>
+        </header>
+
+        <div class="content-panels">
+          <section class="content-panel active" id="section-profile">
+            <section class="profile-overview">
+              <div class="profile-summary">
+                <div class="profile-avatar">KS</div>
+                <div class="profile-details">
+                  <h2>Kinanthi Sekar</h2>
+                  <p>kinanthisekar@gmail.com</p>
+                </div>
+              </div>
+              <div class="profile-stats">
+                <div class="stat-card">
+                  <span class="stat-value">5</span>
+                  <span class="stat-label">Total Pemesanan</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-value">4</span>
+                  <span class="stat-label">Destinasi Dikunjungi</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-value">4.8 ★</span>
+                  <span class="stat-label">Rata-rata Ulasan</span>
+                </div>
+              </div>
+            </section>
+
+            <section class="form-section">
+              <div class="section-card">
+                <div class="section-title">
+                  <div>
+                    <span>Data Diri</span>
+                  </div>
+                  <button id="saveProfile" class="btn-save">Simpan Perubahan</button>
+                </div>
+
+                <form id="profileForm" class="profile-form">
+                  <div class="form-grid">
+                    <label>
+                      Nama Depan
+                      <input type="text" name="firstName" value="Kinanthi" />
+                    </label>
+                    <label>
+                      Nama Belakang
+                      <input type="text" name="lastName" value="Sekar" />
+                    </label>
+                  </div>
+
+                  <div class="form-grid">
+                    <label>
+                      Email
+                      <input type="email" name="email" value="kinanthisekar@gmail.com" />
+                    </label>
+                    <label>
+                      No. WhatsApp
+                      <input type="tel" name="phone" value="0812-3456-7890" />
+                    </label>
+                  </div>
+
+                  <div class="form-grid">
+                    <label>
+                      Tanggal Lahir
+                      <input type="date" name="birthDate" value="1998-12-01" />
+                    </label>
+                    <label>
+                      Jenis Kelamin
+                      <select name="gender">
+                        <option>Perempuan</option>
+                        <option>Laki-laki</option>
+                        <option>Lainnya</option>
+                      </select>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </section>
+
+          <section class="content-panel" id="section-pemesanan">
+            <div class="section-card">
+              <div class="section-title">
+                <div>
+                  <span>Pemesanan Saya</span>
+                </div>
+              </div>
+              <div class="order-tabs">
+                <button class="tab active" data-filter="all">Semua (5)</button>
+                <button class="tab" data-filter="aktif">Aktif (2)</button>
+                <button class="tab" data-filter="selesai">Selesai (2)</button>
+                <button class="tab" data-filter="dibatalkan">Dibatalkan (1)</button>
+              </div>
+              <div class="table-wrap">
+                <table class="order-table">
+                  <thead>
+                    <tr>
+                      <th>Destinasi / Paket</th>
+                      <th>Tanggal Kunjungan</th>
+                      <th>Jumlah Tiket</th>
+                      <th>Total Harga</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr data-status="aktif">
+                      <td>
+                        <strong>Tangkuban Perahu</strong><br />
+                        Lembang, Bandung Barat
+                      </td>
+                      <td>24 Jun 2025<br />08.00 - 17.00 WIB</td>
+                      <td>3 Tiket<br />2 Dewasa, 1 Anak</td>
+                      <td>Rp 285.000</td>
+                      <td><span class="status status-confirmed">Dikonfirmasi</span></td>
+                    </tr>
+                    <tr data-status="aktif">
+                      <td>
+                        <strong>Kawah Putih</strong><br />
+                        Ciwidey, Bandung Selatan
+                      </td>
+                      <td>30 Jun 2025<br />07.00 - 16.00 WIB</td>
+                      <td>2 Tiket<br />2 Dewasa</td>
+                      <td>Rp 150.000</td>
+                      <td><span class="status status-pending">Menunggu</span></td>
+                    </tr>
+                    <tr data-status="selesai">
+                      <td>
+                        <strong>Paket Alam Lembang 1 Hari</strong><br />
+                        Ciwidey, Bandung Selatan
+                      </td>
+                      <td>09 Sep 2025<br />06.00 - 18.00 WIB</td>
+                      <td>1 Tiket<br />1 Dewasa</td>
+                      <td>Rp 199.000</td>
+                      <td><span class="status status-completed">Selesai</span></td>
+                    </tr>
+                    <tr data-status="selesai">
+                      <td>
+                        <strong>Kebun Teh Malabar</strong><br />
+                        Banjarsari, Pangalengan Bandung
+                      </td>
+                      <td>25 Des 2025<br />06.00 - 18.00 WIB</td>
+                      <td>4 Tiket<br />4 Dewasa</td>
+                      <td>Rp 100.000</td>
+                      <td><span class="status status-completed">Selesai</span></td>
+                    </tr>
+                    <tr data-status="dibatalkan">
+                      <td>
+                        <strong>Ciwangun Indah Camp</strong><br />
+                        Parongpong, Bandung Barat
+                      </td>
+                      <td>12 Jan 2026<br />08.00 - 15.00 WIB</td>
+                      <td>1 Tiket<br />1 Dewasa</td>
+                      <td>Rp 75.000</td>
+                      <td><span class="status status-cancelled">Dibatalkan</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-panel" id="section-wishlist">
+            <div class="section-card">
+              <div class="section-title">
+                <div>
+                  <span>Wishlist Saya</span>
+                </div>
+              </div>
+              <div class="card-grid">
+                <div class="wishlist-card">
+                  <div class="wishlist-image" style="background-image: url('assets/perkebunan teh malabar pangalengan 2.jpg');">
+                    <div class="wishlist-image-tag">Destinasi Premium</div>
+                  </div>
+                  <div class="wishlist-content">
+                    <div class="wishlist-header">
+                      <div>
+                        <h4>Kebun Teh Malabar</h4>
+                        <p class="wishlist-meta">Pangalengan · 42 km</p>
+                      </div>
+                      <strong>Rp 25K</strong>
+                    </div>
+                    <div class="wishlist-actions">
+                      <button class="btn-small">Pesan Sekarang</button>
+                      <button class="btn-outline">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishlist-card">
+                  <div class="wishlist-image" style="background-image: url('assets/destinasi.jpg');">
+                    <div class="wishlist-image-tag">Glamping & Adventure</div>
+                  </div>
+                  <div class="wishlist-content">
+                    <div class="wishlist-header">
+                      <div>
+                        <h4>Ciwangun Indah Camp</h4>
+                        <p class="wishlist-meta">Lembang · 22 km</p>
+                      </div>
+                      <strong>Rp 25K</strong>
+                    </div>
+                    <div class="wishlist-actions">
+                      <button class="btn-small">Pesan Sekarang</button>
+                      <button class="btn-outline">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishlist-card">
+                  <div class="wishlist-image" style="background-image: url('assets/dusun-bambu_11zon-scaled.jpg');">
+                    <div class="wishlist-image-tag">Wisata Alam</div>
+                  </div>
+                  <div class="wishlist-content">
+                    <div class="wishlist-header">
+                      <div>
+                        <h4>Dusun Bambu Lembang</h4>
+                        <p class="wishlist-meta">Lembang · 20 km</p>
+                      </div>
+                      <strong>Rp 50K</strong>
+                    </div>
+                    <div class="wishlist-actions">
+                      <button class="btn-small">Pesan Sekarang</button>
+                      <button class="btn-outline">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="wishlist-card">
+                  <div class="wishlist-image" style="background-image: url('assets/tangkuban perahu.jpeg');">
+                    <div class="wishlist-image-tag">Iconik Bandung</div>
+                  </div>
+                  <div class="wishlist-content">
+                    <div class="wishlist-header">
+                      <div>
+                        <h4>Tangkuban Perahu</h4>
+                        <p class="wishlist-meta">Subang · 30 km dari kota</p>
+                      </div>
+                      <strong>Rp 30K</strong>
+                    </div>
+                    <div class="wishlist-actions">
+                      <button class="btn-small">Pesan Sekarang</button>
+                      <button class="btn-outline">Hapus</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-panel" id="section-ulasan">
+            <div class="section-card">
+              <div class="section-title">
+                <div>
+                  <span>Ulasan Saya</span>
+                </div>
+              </div>
+              <div class="review-grid">
+                <div class="review-card">
+                  <div class="review-card-header">
+                    <div>
+                      <strong>Paket Alam Lembang 1 Hari</strong>
+                      <p class="review-location">Ciwidey, Bandung Selatan</p>
+                    </div>
+                    <span class="review-rating">★★★★★</span>
+                  </div>
+                  <p class="review-text">Pengalaman yang luar biasa! Paket wisata Lembang ini sangat lengkap dan worth it banget.</p>
+                  <div class="review-meta">
+                    <span>10 Sep 2025</span>
+                    <button class="btn-text">Edit</button>
+                  </div>
+                </div>
+                <div class="review-card">
+                  <div class="review-card-header">
+                    <div>
+                      <strong>Kebun Teh Malabar</strong>
+                      <p class="review-location">Banjarsari, Pangalengan Bandung</p>
+                    </div>
+                    <span class="review-rating">★★★★☆</span>
+                  </div>
+                  <p class="review-text">Pertunjukan angklung yang memukau! Tempat bersih dan tertata rapi.</p>
+                  <div class="review-meta">
+                    <span>25 Des 2025</span>
+                    <button class="btn-text">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-panel" id="section-pengaturan">
+            <div class="section-card">
+              <div class="section-title">
+                <div>
+                  <span>Pengaturan Akun</span>
+                </div>
+              </div>
+              <div class="settings-grid">
+                <div class="settings-card">
+                  <div class="settings-card-head">
+                    <div>
+                      <h3>Keamanan</h3>
+                      <p class="settings-note">Ubah password akun dan aktifkan verifikasi dua langkah untuk perlindungan ekstra.</p>
+                    </div>
+                  </div>
+                  <label>
+                    <span>Password Saat Ini</span>
+                    <input type="password" placeholder="Masukkan password lama" />
+                  </label>
+                  <label>
+                    <span>Password Baru</span>
+                    <input type="password" placeholder="Min. 8 karakter" />
+                  </label>
+                  <label>
+                    <span>Konfirmasi Password Baru</span>
+                    <input type="password" placeholder="Ulangi password baru" />
+                  </label>
+                  <button class="btn-small btn-primary">Simpan Password</button>
+                </div>
+                <div class="settings-card">
+                  <div class="settings-card-head">
+                    <div>
+                      <h3>Notifikasi</h3>
+                      <p class="settings-note">Atur notifikasi email dan SMS sesuai kebutuhan perjalanan Anda.</p>
+                    </div>
+                  </div>
+                  <label class="toggle-row">
+                    <div>
+                      <span>Konfirmasi Pemesanan</span>
+                      <small>Notifikasi saat tiket dikonfirmasi.</small>
+                    </div>
+                    <input type="checkbox" checked />
+                  </label>
+                  <label class="toggle-row">
+                    <div>
+                      <span>Pengingat Perjalanan</span>
+                      <small>Pengingat H-1 dan H-3 sebelum perjalanan.</small>
+                    </div>
+                    <input type="checkbox" />
+                  </label>
+                  <label class="toggle-row">
+                    <div>
+                      <span>Promo & Penawaran</span>
+                      <small>Diskon dan penawaran eksklusif langsung ke email Anda.</small>
+                    </div>
+                    <input type="checkbox" />
+                  </label>
+                  <label class="toggle-row">
+                    <div>
+                      <span>Notifikasi SMS</span>
+                      <small>Pesan langsung ke ponsel Anda.</small>
+                    </div>
+                    <input type="checkbox" />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="profil-saya.js"></script>
+  </body>
+</html>

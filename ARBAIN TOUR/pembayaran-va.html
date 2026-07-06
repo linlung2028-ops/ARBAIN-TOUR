@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pembayaran - Instruksi VA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pembayaran.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container header-inner">
+      <div class="brand">ARBAIN TOUR</div>
+      <nav class="steps">
+        <div class="step done"><span>1</span><small>Pilih Produk</small></div>
+        <div class="step done"><span>2</span><small>Detail Pesanan</small></div>
+        <div class="step active"><span>3</span><small>Pembayaran</small></div>
+        <div class="step"><span>4</span><small>Menunggu</small></div>
+        <div class="step"><span>5</span><small>Selesai</small></div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container va-page">
+    <div class="va-card card">
+      <div class="va-top">
+        <div class="va-icon">⏱</div>
+        <h2>Selesaikan Pembayaran</h2>
+        <div class="va-amount">Rp <span id="vaAmount">199.499</span></div>
+        <div class="va-note">Transfer jumlah TEPAT termasuk 3 digit terakhir unik</div>
+      </div>
+
+      <div class="va-body">
+        <div class="va-left">
+          <div class="va-row"><div class="label">Bank Tujuan</div><div class="value">BCA</div></div>
+          <div class="va-row"><div class="label">No. Virtual Account</div><div class="value">70012 3456 7890 000</div></div>
+          <div class="va-row"><div class="label">Nama Penerima</div><div class="value">ArbainTour</div></div>
+          <div class="va-row"><div class="label">Total Transfer</div><div class="value total-price">Rp <span id="vaTotal">199.499</span></div></div>
+
+          <div class="time-limit">
+            <div class="limit-label">Batas waktu pembayaran</div>
+            <div class="countdown" id="countdown">
+              <div><div class="num" id="cd-hours">00</div><div class="cd-label">Jam</div></div>
+              <div><div class="num" id="cd-min">00</div><div class="cd-label">Menit</div></div>
+              <div><div class="num" id="cd-sec">00</div><div class="cd-label">Detik</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="instruction-card card">
+      <div class="va-right">
+        <h4>Cara Transfer BCA</h4>
+        <ol class="steps-list">
+          <li>Buka BCA Mobile / myBCA / ATM BCA</li>
+          <li>Pilih menu <strong>Transfer → BCA Virtual Account</strong></li>
+          <li>Masukkan nomor VA: <strong>70012 3456 7890 000</strong></li>
+          <li>Pastikan nama penerima: <strong>ArbainTour</strong></li>
+          <li>Masukkan jumlah <strong>TEPAT Rp199.499</strong> dan konfirmasi</li>
+          <li>Pembayaran dikonfirmasi otomatis dalam 1–3 menit</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="va-actions">
+      <button id="confirmTransfer" class="btn pay">Saya Sudah Transfer</button>
+      <a href="pembayaran.html" class="muted-link">← Kembali & ganti metode pembayaran</a>
+    </div>
+  </main>
+
+  <script src="pembayaran-va.js"></script>
+</body>
+</html>
